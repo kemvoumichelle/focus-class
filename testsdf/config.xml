@@ -1,0 +1,42 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.41">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.security.AuthorizationMatrixProperty>
+      <inheritanceStrategy class="org.jenkinsci.plugins.matrixauth.inheritance.InheritParentStrategy"/>
+      <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:mirielle</permission>
+      <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:pierre</permission>
+      <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:mirielle</permission>
+      <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:pierre</permission>
+      <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:mirielle</permission>
+      <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:pierre</permission>
+      <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:mirielle</permission>
+      <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:pierre</permission>
+      <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:mirielle</permission>
+      <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:pierre</permission>
+      <permission>hudson.model.Item.Build:mirielle</permission>
+      <permission>hudson.model.Item.Cancel:pierre</permission>
+      <permission>hudson.model.Item.Configure:pierre</permission>
+      <permission>hudson.model.Item.Delete:pierre</permission>
+      <permission>hudson.model.Item.Discover:mirielle</permission>
+      <permission>hudson.model.Item.Discover:pierre</permission>
+      <permission>hudson.model.Item.Read:mirielle</permission>
+      <permission>hudson.model.Item.Read:pierre</permission>
+      <permission>hudson.model.Item.Workspace:pierre</permission>
+      <permission>hudson.model.Run.Delete:mirielle</permission>
+      <permission>hudson.model.Run.Replay:mirielle</permission>
+      <permission>hudson.model.Run.Replay:pierre</permission>
+      <permission>hudson.model.Run.Update:mirielle</permission>
+      <permission>hudson.scm.SCM.Tag:mirielle</permission>
+      <permission>hudson.scm.SCM.Tag:pierre</permission>
+    </hudson.security.AuthorizationMatrixProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.93">
+    <script></script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
